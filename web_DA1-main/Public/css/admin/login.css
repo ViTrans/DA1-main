@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.admin-login-wrap {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+.admin-login {
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.admin-login-heading {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.form-field {
+  position: relative;
+  margin: 4px 0;
+}
+
+.admin-login-input {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: calc(100% - 42px);
+  height: 50px;
+  padding: 0 20px;
+  transition: 0.25s ease;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.admin-login-input:focus {
+  border-color: #34495e;
+}
+
+.admin-login-input:hover {
+  border-color: #112b3c;
+}
+
+.admin-login-input.message_error {
+  border-color: #ed1c24;
+}
+
+.admin-login-input:not(:placeholder-shown) + .admin-login-label,
+.admin-login-input:focus + .admin-login-label {
+  top: 0;
+  padding: 0 10px;
+  display: inline-block;
+  background-color: white;
+  color: #34495e;
+}
+
+.admin-login-label {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  transform: translateY(-50%);
+  user-select: none;
+  color: #999;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+.admin-login-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  border: none;
+  background-color: #34495e;
+  transition: 0.2s ease;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.admin-login-btn:hover {
+  opacity: 0.8;
+}
+
+.form-check {
+  margin-top: 8px;
+  text-align: left;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.form-check label {
+  padding: 4px 0;
+  user-select: none;
+}
+
+.form-check input {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.form-messages {
+  margin-left: 4px;
+  font-size: 15px;
+  font-weight: 300;
+  color: red;
+  display: block;
+}
+
+.mb-12 {
+  margin-bottom: 20px;
+}

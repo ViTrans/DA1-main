@@ -1,0 +1,138 @@
+.home-content-table {
+  width: 100%;
+}
+
+.home-content-table_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background-color: rgb(240, 240, 240);
+  border-bottom: 1px solid #ccc;
+}
+
+.home-content-table_header p {
+  color: #000;
+}
+
+.home-content-table_header input {
+  padding: 6px 20px;
+  margin-right: 10px;
+  outline: none;
+  border: 1px solid #0298cf;
+  border-radius: 6px;
+  color: #0298cf;
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.home-content-table_header p {
+  font-size: 20px;
+}
+
+.home-content-table_header .btn-search {
+  padding: 7px 20px;
+  color: #fff;
+  background-color: #0298cf;
+}
+
+.home-content-table_header .btn-card-add {
+  color: #fff;
+  font-size: 20px;
+  min-width: 80px;
+  background-color: #009e00;
+  padding: 4px 0;
+  margin-right: 15px;
+  transition: all 0.15s ease;
+}
+
+.home-content-table_header .btn-card-add:hover {
+  opacity: 0.9;
+}
+
+.home-content-table_section {
+  height: 90vh;
+  overflow: auto;
+}
+
+.home-content-table_section table {
+  width: 100%;
+  table-layout: fixed;
+  min-width: 1000px;
+  border-collapse: collapse;
+}
+
+.home-content-table_section thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f6f9fc;
+  color: #8493a5;
+  font-size: 15px;
+}
+
+.home-content-table_section thead th,
+.home-content-table_section tbody td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  word-break: break-word;
+  text-align: center;
+}
+
+.home-content-table_section tbody td img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 5px solid #ced0d2;
+  display: inline-block;
+}
+
+.home-content-table_section tr:hover td {
+  color: #0298cf;
+  cursor: pointer;
+  background-color: #f6f9fc;
+}
+
+.home-content-table_section tbody td button:nth-child(1) {
+  background-color: #fbb03b;
+}
+
+.home-content-table_section tbody td button:nth-child(2) {
+  background-color: #0298cf;
+}
+
+.home-content-table_section tbody td button:nth-child(3) {
+  background-color: #ed1c24;
+}
+
+.home-content-table_section tbody td button:hover {
+  opacity: 0.8;
+  color: #ccc;
+}
+
+.home-content-table_section tbody td .button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content-table_section tbody td button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.home-content-table_section tbody td button i {
+  font-size: 20px;
+}
+/* End table */

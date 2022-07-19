@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  line-height: 1.5;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background-color: #112b3c;
+  padding: 6px 14px;
+}
+
+.sidebar .logo-content .logo {
+  color: #efefef;
+  text-align: center;
+  padding: 13px 0;
+  border-bottom: 0.2px solid #efefef;
+  letter-spacing: 0.8px;
+}
+
+.logo i {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.logo-name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sidebar #btn {
+  position: absolute;
+  color: #fff;
+  left: 90%;
+  top: 0;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+
+.sidebar ul {
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 10px 5px;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  color: #efefef;
+  text-decoration: none;
+  align-items: center;
+  transition: all 0.3s linear;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #1c3b4d;
+  border-radius: 5px;
+  padding: 0 16px;
+}
+
+.sidebar ul li a.active {
+  background-color: #1c3b4d;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.sidebar ul li i {
+  padding-right: 20px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+
+.sidebar .profile-content {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar .profile-content .profile {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+  background: #1c3b4d;
+}
+
+.sidebar .profile-content .profile .profile-details {
+  display: flex;
+  align-items: center;
+}
+
+.profile .profile-details img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile .profile-details .name-job {
+  margin-left: 10px;
+}
+
+.profile .profile-details .name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profile .profile-details .job {
+  font-size: 12px;
+}
+
+.profile #log-out {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  padding: 14px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.profile #log-out:hover {
+  opacity: 0.8;
+}
+
+.home-content {
+  height: 100%;
+  width: calc(100% - 240px);
+  margin-left: 240px;
+}
+
+.form-logout {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 45%;
+  background-color: #1c3b4d;
+  width: 350px;
+  z-index: 99;
+  border-radius: 6px;
+  padding: 10px;
+  color: #fff;
+}
+
+.form-logout-button {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-logout-button a {
+  font-size: 18px;
+  color: #fff;
+  border-radius: 6px;
+  background-color: aqua;
+  padding: 6px 20px;
+}
+
+.form-logout-button a:hover {
+  opacity: 0.8;
+}
+
+.form-logout-button a:first-child {
+  background-color: red;
+}
+
+.form-logout-button a:last-child {
+  background-color: #ccc;
+}
+
+.form-logout span {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 8px;
+  font-weight: 300;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 19;
+  opacity: 0.4;
+}

@@ -1,0 +1,120 @@
+.home-content-body {
+  margin-top: 12px;
+}
+
+.home-content-heading {
+  font-size: 20px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #ccc;
+  background-color: rgb(240, 240, 240);
+}
+
+.home-content-body-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.home-content-body-list .home-content-body-item:first-child {
+  margin-left: -5px;
+}
+
+.home-content-body-list .home-content-body-item:last-child {
+  margin-right: -5px;
+}
+
+.home-content-body-item {
+  position: relative;
+  padding-top: 10px;
+  margin: 0 10px;
+  border-radius: 6px;
+  list-style-type: none;
+  display: inline-block;
+  min-width: calc((100% - 240px) / 4);
+}
+
+.home-content-body-list .home-content-body-item:nth-child(1) {
+  background-color: #17a2b8;
+}
+
+.home-content-body-list .home-content-body-item:nth-child(2) {
+  background-color: #28a745;
+}
+
+.home-content-body-list .home-content-body-item:nth-child(3) {
+  background-color: #ffc107;
+}
+
+.home-content-body-list .home-content-body-item:nth-child(4) {
+  background-color: #dc3545;
+}
+
+.home-content-body-item:hover .home-content-body-item_logo {
+  transform: scale(115%);
+}
+
+.item-body-info-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+.item-body-info {
+  margin-left: 4px;
+  min-width: 115px;
+}
+
+.item-body-info_quantity {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#id_price {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#id_description {
+  margin-top: 50px;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.item-body-info_description {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
+
+.home-content-body-item_logo {
+  font-size: 70px;
+  margin-left: 30px;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+
+.home-content-body-item-link {
+  padding: 6px 0;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.home-content-body-item-link a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.home-content-body-item-link i {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+}
